@@ -1,12 +1,12 @@
 import type { Site, Ui, Features } from './types'
 
 export const SITE: Site = {
-  website: 'https://astro-antfustyle-theme.vercel.app/',
+  website: 'https://akimio.vercel.app/',
   base: '/',
-  title: 'Astro AntfuStyle Theme',
+  title: "Mio's Log",
   description:
-    'A customizable, feature-rich Astro theme for blog and portfolio creation',
-  author: 'Stephanie Lin',
+    'A simple but helpful log :D',
+  author: 'Mio',
   lang: 'en',
   ogLocale: 'en_US',
   imageDomains: ['cdn.bsky.app', 'images.unsplash.com'],
@@ -26,34 +26,6 @@ export const UI: Ui = {
       displayMode: 'alwaysText',
       text: 'Projects',
     },
-    {
-      path: '/highlights',
-      title: 'Highlights',
-      displayMode: 'iconToTextOnMobile',
-      text: 'Highlights',
-      icon: 'i-ri-screenshot-line',
-    },
-    {
-      path: '/photos',
-      title: 'Photos',
-      displayMode: 'iconToTextOnMobile',
-      text: 'Photos',
-      icon: 'i-ri-camera-ai-line',
-    },
-    {
-      path: '/shorts',
-      title: 'Shorts',
-      displayMode: 'iconToTextOnMobile',
-      text: 'Shorts',
-      icon: 'i-meteor-icons-grid',
-    },
-    {
-      path: '/changelog',
-      title: 'Changelog',
-      displayMode: 'iconToTextOnMobile',
-      text: 'Changelog',
-      icon: 'i-ri-draft-line',
-    },
   ],
   socialLinks: [
     {
@@ -61,18 +33,6 @@ export const UI: Ui = {
       title: 'AntfuStyle on Github',
       displayMode: 'alwaysIcon',
       icon: 'i-uil-github-alt',
-    },
-    {
-      link: 'https://x.com/astrodotbuild',
-      title: 'Astro on Twitter',
-      displayMode: 'alwaysIcon',
-      icon: 'i-ri-twitter-x-fill',
-    },
-    {
-      link: 'https://bsky.app/profile/astro.build',
-      title: 'Astro on Bluesky',
-      displayMode: 'alwaysIcon',
-      icon: 'i-meteor-icons-bluesky',
     },
   ],
   navBarLayout: {
@@ -88,11 +48,7 @@ export const UI: Ui = {
     ],
     mergeOnMobile: true,
   },
-  tabbedLayoutTabs: [
-    { title: 'Changelog', path: '/changelog' },
-    { title: 'AstroBlog', path: '/feeds' },
-    { title: 'AstroStreams', path: '/streams' },
-  ],
+  tabbedLayoutTabs: false,
   groupView: {
     maxGroupColumns: 3,
     showGroupItemColorOnHover: true,
@@ -146,7 +102,7 @@ export const FEATURES: Features = {
     },
   ],
   share: [
-    true,
+    false,
     {
       twitter: [true, '@ste7lin'],
       bluesky: [true, '@ste7lin.bsky.social'],
@@ -160,7 +116,7 @@ export const FEATURES: Features = {
     },
   ],
   giscus: [
-    true,
+    false,
     {
       'data-repo': 'lin-stephanie/astro-antfustyle-theme',
       'data-repo-id': 'R_kgDOLylKbA',

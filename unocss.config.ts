@@ -108,8 +108,8 @@ export default defineConfig({
     }),
     presetWebFonts({
       fonts: {
-        sans: 'Inter:400,600,800',
-        mono: 'DM Mono:400,600',
+        sans: ['Inter:400,600,800', 'Noto Serif SC:500,700'],
+        mono: 'JetBrains Mono:400,600',
         condensed: 'Roboto Condensed',
       },
     }),
